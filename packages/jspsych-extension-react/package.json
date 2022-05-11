@@ -1,0 +1,24 @@
+{
+  "name": "@jmuchovej/jspsych-extension-react",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "A jsPsych extension to [minimally] support using React.",
+  "keywords": ["jsPsych", "React", "React DOM", "psychology research"],
+  "author": {
+    "email": "jm0@duck.com",
+    "name": "John Muchovej",
+    "url": "https://john.muchovej.com/"
+  },
+  "repository": {
+    "url": "https://github.com/jmuchovej/monorepo.ts.git",
+    "directory": "packages/jspsych-extension-react",
+    "type": "git"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@types/react-dom": "^18.0.3",
+    "jspsych": "^7.2.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
