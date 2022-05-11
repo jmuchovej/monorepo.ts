@@ -1,0 +1,23 @@
+{
+  "name": "@jmuchovej/jspsych-extension-jatos",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "A jsPsych extension to [minimally] support using JATOS.",
+  "keywords": ["jsPsych", "JATOS", "psychology research"],
+  "author": {
+    "email": "jm0@duck.com",
+    "name": "John Muchovej",
+    "url": "https://john.muchovej.com/"
+  },
+  "repository": {
+    "url": "https://github.com/jmuchovej/monorepo.ts.git",
+    "directory": "packages/jspsych-extension-jatos",
+    "type": "git"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@types/lodash": "^4.14.182",
+    "jspsych": "^7.2.1",
+    "lodash": "^4.17.21"
+  }
+}

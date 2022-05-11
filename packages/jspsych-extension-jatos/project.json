@@ -1,0 +1,42 @@
+{
+  "root": "packages/jspsych-extension-jatos",
+  "sourceRoot": "packages/jspsych-extension-jatos/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/jspsych-extension-jatos",
+        "main": "packages/jspsych-extension-jatos/src/index.ts",
+        "tsConfig": "packages/jspsych-extension-jatos/tsconfig.lib.json",
+        "assets": [
+          "packages/jspsych-extension-jatos/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/jspsych-extension-jatos/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/packages/jspsych-extension-jatos"
+      ],
+      "options": {
+        "jestConfig": "packages/jspsych-extension-jatos/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
