@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "jspsych-extension-jatos": "packages/jspsych-extension-jatos",
+    "jspsych-extension-react": "packages/jspsych-extension-react"
+  }
+}
