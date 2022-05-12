@@ -1,6 +1,6 @@
 {
   "name": "@jmuchovej/jspsych-extension-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "description": "A jsPsych extension to [minimally] support using React.",
   "keywords": [
@@ -21,9 +21,11 @@
   },
   "type": "commonjs",
   "dependencies": {
-    "@types/react-dom": "^18.0.3",
     "jspsych": "^7.2.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@types/react-dom": "^18.0.3"
   }
 }
