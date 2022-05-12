@@ -1,9 +1,14 @@
 {
   "name": "@jmuchovej/jspsych-extension-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "description": "A jsPsych extension to [minimally] support using React.",
-  "keywords": ["jsPsych", "React", "React DOM", "psychology research"],
+  "keywords": [
+    "jsPsych",
+    "React",
+    "React DOM",
+    "psychology research"
+  ],
   "author": {
     "email": "jm0@duck.com",
     "name": "John Muchovej",

@@ -8,6 +8,9 @@ interface OnStartParameters {
 }
 
 interface OnLoadParameters {
+  component: Function,
+  trial: {}
+  stimulus: {}
 }
 
 interface OnFinishParameters {
@@ -44,7 +47,8 @@ class ReactDOMExtension implements JsPsychExtension {
     this.root = createRoot(this.container)
   };
 
-  on_load({}: OnLoadParameters): void {
+  on_load({ component, stimulus }: OnLoadParameters): void {
+    this.render(component, stimulus)
   };
 
   on_finish({}: OnFinishParameters): { [key: string]: any } {
@@ -55,7 +59,6 @@ class ReactDOMExtension implements JsPsychExtension {
   public render(component: Function, params: {} = {}): void {
     this.root.render(component({jsPsych: this.jsPsych, ...params}))
   }
-
 }
 
 export default ReactDOMExtension;
