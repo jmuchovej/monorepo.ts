@@ -1,0 +1,42 @@
+{
+  "root": "packages/jspsych-plugin-react",
+  "sourceRoot": "packages/jspsych-plugin-react/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "outputPath": "dist/packages/jspsych-plugin-react",
+        "main": "packages/jspsych-plugin-react/src/index.ts",
+        "tsConfig": "packages/jspsych-plugin-react/tsconfig.lib.json",
+        "assets": [
+          "packages/jspsych-plugin-react/*.md"
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "packages/jspsych-plugin-react/**/*.ts"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/packages/jspsych-plugin-react"
+      ],
+      "options": {
+        "jestConfig": "packages/jspsych-plugin-react/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
